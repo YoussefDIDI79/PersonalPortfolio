@@ -108,15 +108,16 @@ contactMessages: {
 ## Recent Changes
 
 ```
+✓ Configured Vercel deployment with serverless functions
+✓ Created API endpoints for contact form and CV download
+✓ Added vercel.json configuration for proper routing
+✓ Set up build scripts for production deployment
+✓ Created deployment documentation and troubleshooting guide
 ✓ Updated with correct contact information: 06.44.45.21.57, moncifcherradi240@gmail.com
 ✓ Updated address: 162 Partie 1 Lotissement zaitouna, Khouribga
 ✓ Replaced female photo with professional male healthcare worker image
 ✓ Enhanced design with sophisticated glass-morphism effects and animations
 ✓ Improved professional profile description based on auxiliary nurse role
-✓ Updated personal qualities to match exact CV format
-✓ Enhanced skill descriptions with more professional language
-✓ Updated PDF CV generation with correct contact details
-✓ Improved visual hierarchy and modern medical theme
 ```
 
 ## Changelog
