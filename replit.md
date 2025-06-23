@@ -105,11 +105,24 @@ contactMessages: {
 - **Build Commands**: Separate build and start scripts for production deployment
 - **Module Type**: ES modules throughout the application
 
+## Recent Changes
+
+```
+✓ Professional navigation redesign with gradient logo and clean typography
+✓ Removed "Accueil" text next to name for cleaner look
+✓ Enhanced hero section with availability indicator and improved animations
+✓ Added flag icons to language switcher for better UX
+✓ Improved mobile navigation with backdrop blur and rounded elements
+✓ Fixed TypeScript compilation errors
+✓ Enhanced CSS animations and gradient effects
+```
+
 ## Changelog
 
 ```
 Changelog:
-- June 23, 2025. Initial setup
+- June 23, 2025: Initial portfolio setup with multilingual support
+- June 23, 2025: Professional design improvements and navigation enhancement
 ```
 
 ## User Preferences

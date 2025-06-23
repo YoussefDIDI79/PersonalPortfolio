@@ -113,3 +113,41 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Improved gradient backgrounds */
+.gradient-medical {
+  background: linear-gradient(135deg, 
+    hsl(220, 91%, 55%) 0%,
+    hsl(199, 89%, 48%) 50%,
+    hsl(207, 90%, 54%) 100%
+  );
+}

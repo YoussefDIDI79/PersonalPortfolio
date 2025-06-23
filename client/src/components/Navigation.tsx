@@ -39,81 +39,98 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white shadow-lg fixed w-full z-50 top-0">
+    <nav className="bg-white/95 backdrop-blur-sm shadow-lg fixed w-full z-50 top-0 border-b border-blue-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <div className="text-xl font-bold text-blue-600">
-              {t('hero.fullName').split(' ')[0]} {t('hero.fullName').split(' ')[1]}
-            </div>
-            <div className="hidden md:block ml-2 text-sm text-gray-500">
-              {t('nav.home')}
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-sky-500 rounded-full flex items-center justify-center shadow-lg">
+                <span className="text-white font-bold text-lg">
+                  {t('hero.fullName').split(' ')[0][0]}{t('hero.fullName').split(' ')[1][0]}
+                </span>
+              </div>
+              <div>
+                <div className="text-xl font-bold bg-gradient-to-r from-blue-600 to-sky-500 bg-clip-text text-transparent">
+                  {t('hero.fullName').split(' ')[0]} {t('hero.fullName').split(' ')[1]}
+                </div>
+                <div className="text-xs text-gray-500 font-medium">
+                  Infirmier Auxiliaire
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             <button
               onClick={() => scrollToSection('hero')}
-              className="text-gray-500 hover:text-blue-600 transition-colors"
+              className="relative px-3 py-2 text-gray-600 hover:text-blue-600 transition-all duration-300 font-medium group"
             >
               {t('nav.home')}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-sky-500 group-hover:w-full transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('about')}
-              className="text-gray-500 hover:text-blue-600 transition-colors"
+              className="relative px-3 py-2 text-gray-600 hover:text-blue-600 transition-all duration-300 font-medium group"
             >
               {t('nav.about')}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-sky-500 group-hover:w-full transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('experience')}
-              className="text-gray-500 hover:text-blue-600 transition-colors"
+              className="relative px-3 py-2 text-gray-600 hover:text-blue-600 transition-all duration-300 font-medium group"
             >
               {t('nav.experience')}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-sky-500 group-hover:w-full transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('skills')}
-              className="text-gray-500 hover:text-blue-600 transition-colors"
+              className="relative px-3 py-2 text-gray-600 hover:text-blue-600 transition-all duration-300 font-medium group"
             >
               {t('nav.skills')}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-sky-500 group-hover:w-full transition-all duration-300"></span>
             </button>
             <button
               onClick={() => scrollToSection('contact')}
-              className="text-gray-500 hover:text-blue-600 transition-colors"
+              className="relative px-3 py-2 text-gray-600 hover:text-blue-600 transition-all duration-300 font-medium group"
             >
               {t('nav.contact')}
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-sky-500 group-hover:w-full transition-all duration-300"></span>
             </button>
 
             {/* Language Switcher */}
-            <div className="flex items-center space-x-2 border-l pl-4">
+            <div className="flex items-center space-x-1 border-l border-gray-200 pl-6">
               <Button
                 variant={i18n.language === 'fr' ? 'default' : 'ghost'}
                 size="sm"
                 onClick={() => changeLanguage('fr')}
-                className="text-xs"
+                className="text-xs h-8 px-3 rounded-full transition-all duration-300"
               >
-                FR
+                🇫🇷 FR
               </Button>
               <Button
                 variant={i18n.language === 'ar' ? 'default' : 'ghost'}
                 size="sm"
                 onClick={() => changeLanguage('ar')}
-                className="text-xs"
+                className="text-xs h-8 px-3 rounded-full transition-all duration-300"
               >
-                AR
+                🇲🇦 AR
               </Button>
               <Button
                 variant={i18n.language === 'en' ? 'default' : 'ghost'}
                 size="sm"
                 onClick={() => changeLanguage('en')}
-                className="text-xs"
+                className="text-xs h-8 px-3 rounded-full transition-all duration-300"
               >
-                EN
+                🇺🇸 EN
               </Button>
             </div>
 
             {/* CV Download */}
-            <Button onClick={downloadCV} className="bg-blue-600 hover:bg-blue-700">
+            <Button 
+              onClick={downloadCV} 
+              className="bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 rounded-full px-6"
+            >
               <Download className="w-4 h-4 mr-2" />
               {t('nav.downloadCV')}
             </Button>
@@ -133,66 +150,72 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden bg-white border-t">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="md:hidden bg-white/95 backdrop-blur-sm border-t border-blue-100">
+            <div className="px-4 pt-4 pb-6 space-y-3">
               <button
                 onClick={() => scrollToSection('hero')}
-                className="block w-full text-left px-3 py-2 text-gray-500 hover:text-blue-600"
+                className="block w-full text-left px-4 py-3 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all font-medium"
               >
                 {t('nav.home')}
               </button>
               <button
                 onClick={() => scrollToSection('about')}
-                className="block w-full text-left px-3 py-2 text-gray-500 hover:text-blue-600"
+                className="block w-full text-left px-4 py-3 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all font-medium"
               >
                 {t('nav.about')}
               </button>
               <button
                 onClick={() => scrollToSection('experience')}
-                className="block w-full text-left px-3 py-2 text-gray-500 hover:text-blue-600"
+                className="block w-full text-left px-4 py-3 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all font-medium"
               >
                 {t('nav.experience')}
               </button>
               <button
                 onClick={() => scrollToSection('skills')}
-                className="block w-full text-left px-3 py-2 text-gray-500 hover:text-blue-600"
+                className="block w-full text-left px-4 py-3 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all font-medium"
               >
                 {t('nav.skills')}
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
-                className="block w-full text-left px-3 py-2 text-gray-500 hover:text-blue-600"
+                className="block w-full text-left px-4 py-3 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-all font-medium"
               >
                 {t('nav.contact')}
               </button>
               
               {/* Mobile Language Switcher */}
-              <div className="flex space-x-2 px-3 py-2">
+              <div className="flex space-x-2 px-4 py-3 border-t border-gray-100 mt-4">
                 <Button
                   variant={i18n.language === 'fr' ? 'default' : 'ghost'}
                   size="sm"
                   onClick={() => changeLanguage('fr')}
+                  className="rounded-full flex-1"
                 >
-                  FR
+                  🇫🇷 FR
                 </Button>
                 <Button
                   variant={i18n.language === 'ar' ? 'default' : 'ghost'}
                   size="sm"
                   onClick={() => changeLanguage('ar')}
+                  className="rounded-full flex-1"
                 >
-                  AR
+                  🇲🇦 AR
                 </Button>
                 <Button
                   variant={i18n.language === 'en' ? 'default' : 'ghost'}
                   size="sm"
                   onClick={() => changeLanguage('en')}
+                  className="rounded-full flex-1"
                 >
-                  EN
+                  🇺🇸 EN
                 </Button>
               </div>
               
-              <div className="px-3 py-2">
-                <Button onClick={downloadCV} className="w-full bg-blue-600 hover:bg-blue-700">
+              <div className="px-4 py-2">
+                <Button 
+                  onClick={downloadCV} 
+                  className="w-full bg-gradient-to-r from-blue-600 to-sky-500 hover:from-blue-700 hover:to-sky-600 text-white shadow-lg rounded-full py-3"
+                >
                   <Download className="w-4 h-4 mr-2" />
                   {t('nav.downloadCV')}
                 </Button>
