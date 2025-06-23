@@ -1,0 +1,103 @@
+ Pages principales de ton site portfolio
+1. Page d’accueil (Accueil)
+Une photo professionnelle de toi.
+
+Ton nom complet : Moncif CHERRADI
+
+Une phrase d'accroche :
+"Infirmier auxiliaire diplômé, passionné par le soin et le service humain."
+
+2. À propos de moi
+Une courte biographie résumant ton profil (comme dans ton CV).
+
+Quelques lignes sur ta motivation à exercer ce métier.
+
+Option : photo de toi en situation (stages, blouse…).
+
+3. Expérience
+Présente tes stages en format ligne du temps ou liste :
+
+Hôpital Hassan II à Khouribga :
+
+Médecine
+
+Chirurgie
+
+Pédiatrie
+
+Urgences
+
+Centres de santé : Zitouna, El Qods, El Brik
+
+Pour chaque lieu : ajoute les dates, les missions effectuées, ce que tu as appris.
+
+4. Compétences
+Présente tes compétences sous forme de listes ou d’icônes :
+
+Savoir analyser et retranscrire l'information
+
+Être méthodique
+
+S’adapter à chaque patient
+
+Avoir un bon sens du relationnel
+
+Pédagogie
+
+Vigilance…
+
+5. Qualités personnelles
+Affiche-les sous forme de petites cartes ou infographies :
+
+Rigueur
+
+Autonomie
+
+Dynamisme
+
+Esprit d’équipe
+
+Créativité
+
+Motivation
+
+Passion…
+
+6. Formation
+2024 : Diplôme d’infirmier auxiliaire – École IFSI à Khouribga
+
+Baccalauréat en Sciences de la vie et de la terre
+
+7. Langues
+Avec drapeaux :
+
+🇲🇦 Arabe : Langue maternelle
+
+🇫🇷 Français : Courant
+
+🇺🇸 Anglais : Niveau scolaire
+
+8. Contact
+Téléphone, email, adresse complète
+
+Formulaire de contact simple (nom, email, message)
+
+Liens vers réseaux sociaux (LinkedIn, Instagram si tu l’utilises de manière pro)
+
+💡 Fonctionnalités supplémentaires à ajouter
+🔵 Design en bleu et blanc (couleurs médicales)
+
+📄 CV téléchargeable en PDF
+
+🌐 Choix de la langue : Français – Arabe – Anglais
+
+🎓 Une page “Mes diplômes” avec photos des certificats
+
+📸 Une galerie si tu as des photos professionnelles ou de ton travail
+
+🛠️ Outils que tu peux utiliser pour créer le site :
+WordPress (très simple, thème médical gratuit)
+
+Wix ou Webflow (drag & drop facile à utiliser)
+
+Ou créer le site avec HTML + CSS + JavaScript
