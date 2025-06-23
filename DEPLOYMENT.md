@@ -7,6 +7,12 @@ This guide will help you deploy your Moncif CHERRADI portfolio to Vercel.
 1. **GitHub Account**: Your code should be pushed to a GitHub repository
 2. **Vercel Account**: Sign up at [vercel.com](https://vercel.com)
 
+## Important Notes
+
+- The configuration uses serverless functions in the `/api` directory
+- Frontend is built as a static site with React
+- No "functions" property in vercel.json to avoid conflicts with "builds"
+
 ## Deployment Steps
 
 ### 1. Push Code to GitHub
