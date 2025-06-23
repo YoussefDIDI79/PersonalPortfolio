@@ -1,0 +1,55 @@
+[22:08:00.191] Running build in Washington, D.C., USA (East) – iad1
+[22:08:00.192] Build machine configuration: 2 cores, 8 GB
+[22:08:00.247] Cloning github.com/YoussefDIDI79/PersonalPortfolio (Branch: main, Commit: f5d683e)
+[22:08:00.437] Previous build caches not available
+[22:08:00.522] Cloning completed: 275.000ms
+[22:08:00.555] Found .vercelignore
+[22:08:00.560] Removed 25 ignored files defined in .vercelignore
+[22:08:00.560]   /.git/config
+[22:08:00.560]   /.git/description
+[22:08:00.560]   /.git/FETCH_HEAD
+[22:08:00.560]   /.git/HEAD
+[22:08:00.560]   /.git/hooks/applypatch-msg.sample
+[22:08:00.560]   /.git/hooks/commit-msg.sample
+[22:08:00.560]   /.git/hooks/fsmonitor-watchman.sample
+[22:08:00.560]   /.git/hooks/post-update.sample
+[22:08:00.560]   /.git/hooks/pre-applypatch.sample
+[22:08:00.560]   /.git/hooks/pre-commit.sample
+[22:08:01.605] Running "vercel build"
+[22:08:02.063] Vercel CLI 43.3.0
+[22:08:02.222] WARN! Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
+[22:08:02.612] Installing dependencies...
+[22:08:07.245] npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+[22:08:07.259] npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+[22:08:12.185] 
+[22:08:12.185] added 503 packages in 9s
+[22:08:12.186] 
+[22:08:12.186] 66 packages are looking for funding
+[22:08:12.187]   run `npm fund` for details
+[22:08:12.231] Running "npm run build"
+[22:08:12.341] 
+[22:08:12.341] > rest-express@1.0.0 build
+[22:08:12.342] > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+[22:08:12.342] 
+[22:08:12.592] [36mvite v5.4.19 [32mbuilding for production...[36m[39m
+[22:08:12.642] transforming...
+[22:08:12.910] Browserslist: browsers data (caniuse-lite) is 8 months old. Please run:
+[22:08:12.911]   npx update-browserslist-db@latest
+[22:08:12.911]   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[22:08:16.580] [32m✓[39m 1696 modules transformed.
+[22:08:16.851] rendering chunks...
+[22:08:16.860] computing gzip size...
+[22:08:16.876] [2m../dist/public/[22m[32mindex.html                 [39m[1m[2m  1.34 kB[22m[1m[22m[2m │ gzip:   0.63 kB[22m
+[22:08:16.876] [2m../dist/public/[22m[2massets/[22m[35mindex-lJ-9--Oj.css  [39m[1m[2m 72.08 kB[22m[1m[22m[2m │ gzip:  12.21 kB[22m
+[22:08:16.877] [2m../dist/public/[22m[2massets/[22m[36mindex-DosZcmAZ.js   [39m[1m[2m362.81 kB[22m[1m[22m[2m │ gzip: 114.35 kB[22m
+[22:08:16.877] [32m✓ built in 4.26s[39m
+[22:08:16.904] ✘ [ERROR] Could not resolve "./vite"
+[22:08:16.904] 
+[22:08:16.904]     server/index.ts:3:44:
+[22:08:16.904]       3 │ import { setupVite, serveStatic, log } from "./vite";
+[22:08:16.904]         ╵                                             ~~~~~~~~
+[22:08:16.904] 
+[22:08:16.906] 1 error
+[22:08:16.917] Error: Command "npm run build" exited with 1
+[22:08:17.117] 
+[22:08:20.029] Exiting build container

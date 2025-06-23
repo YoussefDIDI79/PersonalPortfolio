@@ -1,29 +1,19 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist/public"
-      }
-    }
-  ],
+  "buildCommand": "vite build --outDir dist client",
+  "outputDirectory": "dist",
   "routes": [
     {
       "src": "/api/contact",
       "dest": "/api/contact.ts"
     },
     {
-      "src": "/api/cv/download",
+      "src": "/api/cv/download", 
       "dest": "/api/cv/download.ts"
     },
     {
       "src": "/(.*)",
-      "dest": "/dist/public/$1"
+      "dest": "/$1"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }

@@ -49,16 +49,22 @@ If you plan to use a database in the future:
 
 ```
 ├── api/                    # Serverless functions
-│   ├── index.ts           # Main API handler
 │   ├── contact.ts         # Contact form endpoint
 │   └── cv/
 │       └── download.ts    # CV download endpoint
 ├── client/                # Frontend React app
-├── server/                # Original server code (referenced by API)
-├── shared/                # Shared schemas
+├── shared/                # Shared schemas (used by API functions)
 ├── vercel.json           # Vercel configuration
+├── build.js              # Custom build script for frontend only
 └── package.json          # Dependencies and build scripts
 ```
+
+## Build Process
+
+The deployment now uses a simplified build process:
+- **Frontend**: Built with Vite to `/dist` directory
+- **API**: Serverless functions in `/api` directory
+- **No Server Build**: The original server code is not built for Vercel
 
 ## Features Supported
 
@@ -94,6 +100,8 @@ DATABASE_URL=your_database_connection_string
 ### Build Errors
 - Check the build logs in Vercel dashboard
 - Ensure all dependencies are in `package.json`
+- The build only compiles the frontend (client) - server code is not needed for Vercel
+- API functions are handled separately as serverless functions
 
 ### API Issues
 - Verify serverless functions are in the `/api` directory
