@@ -54,9 +54,9 @@ export default function HeroSection() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-sky-200/20 rounded-full blur-3xl transform scale-110"></div>
               <img
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600"
+                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=600"
                 alt={`${t('hero.fullName')} - ${t('nav.home')}`}
-                className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full shadow-2xl border-8 border-white/90 object-cover backdrop-blur-sm"
+                className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full shadow-2xl border-8 border-white/90 object-cover backdrop-blur-sm animate-float"
               />
               <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-xl">
                 <div className="w-6 h-6 bg-gradient-to-br from-blue-600 to-sky-500 rounded-full flex items-center justify-center">
