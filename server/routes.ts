@@ -50,9 +50,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Contact Information
       doc.fontSize(14).text('CONTACT', 50, 150);
       doc.fontSize(10)
-        .text('Email: moncif.cherradi@email.com', 50, 170)
-        .text('Téléphone: +212 6XX XXX XXX', 50, 185)
-        .text('Adresse: Khouribga, Maroc', 50, 200);
+        .text('Email: moncifcherradi240@gmail.com', 50, 170)
+        .text('Téléphone: 06.44.45.21.57', 50, 185)
+        .text('Adresse: 162 Partie 1 Lotissement zaitouna, Khouribga', 50, 200);
 
       // Education
       doc.fontSize(14).text('FORMATION', 50, 230);
@@ -71,11 +71,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
       // Skills
       doc.fontSize(14).text('COMPÉTENCES', 50, 395);
       doc.fontSize(10)
-        .text('• Analyser et retranscrire l\'information', 50, 415)
-        .text('• Méthodologie et rigueur', 50, 430)
-        .text('• Adaptation aux besoins des patients', 50, 445)
-        .text('• Excellent sens relationnel', 50, 460)
-        .text('• Pédagogie et vigilance', 50, 475);
+        .text('• Savoir analyser et retranscrire l\'information', 50, 415)
+        .text('• Être méthodique', 50, 430)
+        .text('• Savoir s\'adapter à chaque patient', 50, 445)
+        .text('• Avoir un excellent sens du relationnel', 50, 460)
+        .text('• Faire preuve de pédagogie', 50, 475)
+        .text('• Être vigilant', 50, 490);
 
       // Languages
       doc.fontSize(14).text('LANGUES', 50, 505);
@@ -85,10 +86,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
         .text('• Anglais (niveau scolaire)', 50, 555);
 
       // Personal Qualities
-      doc.fontSize(14).text('QUALITÉS PERSONNELLES', 50, 585);
+      doc.fontSize(14).text('QUALITÉS PERSONNELLES', 50, 600);
       doc.fontSize(10)
-        .text('Rigueur • Autonomie • Dynamisme • Esprit d\'équipe', 50, 605)
-        .text('Créativité • Motivation • Passion', 50, 620);
+        .text('La rigueur • L\'autonomie • Le dynamisme • L\'esprit d\'équipe', 50, 620)
+        .text('La créativité • La motivation • La passion • Le bon relationnel', 50, 635);
 
       doc.end();
     } catch (error) {

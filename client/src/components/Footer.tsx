@@ -20,14 +20,14 @@ export default function Footer() {
               <Linkedin className="w-8 h-8" />
             </a>
             <a
-              href="mailto:moncif.cherradi@email.com"
+              href="mailto:moncifcherradi240@gmail.com"
               className="text-gray-400 hover:text-white transition-colors"
               aria-label="Email"
             >
               <Mail className="w-8 h-8" />
             </a>
             <a
-              href="tel:+212-6XX-XXX-XXX"
+              href="tel:0644452157"
               className="text-gray-400 hover:text-white transition-colors"
               aria-label="Phone"
             >

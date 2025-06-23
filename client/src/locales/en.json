@@ -17,7 +17,7 @@
     "title": "About me",
     "professionalProfile": "Professional profile",
     "motivation": "Motivation",
-    "profileText": "Graduated in 2024 from IFSI School in Khouribga, I am an auxiliary nurse passionate about healthcare and patient well-being. My journey has allowed me to gain solid experience in various hospital departments and health centers.",
+    "profileText": "Auxiliary nurses administer nursing care to patients, usually under the supervision of doctors, registered nurses or other health team members. Graduated in 2024 from IFSI School in Khouribga, I have gained solid experience in various hospital departments and health centers.",
     "motivationText": "My passion for this profession stems from the deep conviction that every patient deserves quality care delivered with compassion and professionalism. I strive daily to bring comfort and support to those who need it.",
     "graduated2024": "Graduated 2024",
     "passionate": "Passionate",
@@ -96,9 +96,9 @@
     "placeholderSubject": "Subject of your message",
     "placeholderMessage": "Your message...",
     "sendButton": "Send message",
-    "phoneNumber": "+212 6XX XXX XXX",
-    "emailAddress": "moncif.cherradi@email.com",
-    "addressText": "Khouribga, Morocco",
+    "phoneNumber": "06.44.45.21.57",
+    "emailAddress": "moncifcherradi240@gmail.com",
+    "addressText": "162 Part 1 Zaitouna Housing Estate, Khouribga",
     "linkedinUrl": "linkedin.com/in/moncif-cherradi"
   },
   "footer": {

@@ -59,6 +59,7 @@ export default function SkillsSection() {
     { icon: Lightbulb, title: t('skills.creativity') },
     { icon: Rocket, title: t('skills.motivation') },
     { icon: Heart, title: t('skills.passion') },
+    { icon: MessageCircle, title: t('skills.relationnel') },
   ];
 
   return (

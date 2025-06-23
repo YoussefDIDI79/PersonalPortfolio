@@ -108,13 +108,15 @@ contactMessages: {
 ## Recent Changes
 
 ```
-✓ Professional navigation redesign with gradient logo and clean typography
-✓ Removed "Accueil" text next to name for cleaner look
-✓ Enhanced hero section with availability indicator and improved animations
-✓ Added flag icons to language switcher for better UX
-✓ Improved mobile navigation with backdrop blur and rounded elements
-✓ Fixed TypeScript compilation errors
-✓ Enhanced CSS animations and gradient effects
+✓ Updated with correct contact information: 06.44.45.21.57, moncifcherradi240@gmail.com
+✓ Updated address: 162 Partie 1 Lotissement zaitouna, Khouribga
+✓ Replaced female photo with professional male healthcare worker image
+✓ Enhanced design with sophisticated glass-morphism effects and animations
+✓ Improved professional profile description based on auxiliary nurse role
+✓ Updated personal qualities to match exact CV format
+✓ Enhanced skill descriptions with more professional language
+✓ Updated PDF CV generation with correct contact details
+✓ Improved visual hierarchy and modern medical theme
 ```
 
 ## Changelog
